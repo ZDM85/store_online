@@ -21,16 +21,16 @@ const App = () => {
     }
   }, []);
 
-  if (user.loading) {
-    return (
-      <div className="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    );
-  }
+  // if (user.loading) {
+  //   return (
+  //     <div className="lds-ring">
+  //       <div></div>
+  //       <div></div>
+  //       <div></div>
+  //       <div></div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <BrowserRouter>
