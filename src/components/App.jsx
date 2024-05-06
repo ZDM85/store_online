@@ -12,12 +12,25 @@ const App = () => {
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
-      check().then((data) => {
-        user.setUser(data);
-        user.setIsAuth(true);
-      });
+      check()
+        .then((data) => {
+          user.setUser(data);
+          user.setIsAuth(true);
+        })
+        .finally(() => user.setLoading(false));
     }
   }, []);
+
+  if (user.loading) {
+    return (
+      <div className="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    );
+  }
 
   return (
     <BrowserRouter>
