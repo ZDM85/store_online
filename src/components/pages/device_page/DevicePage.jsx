@@ -15,7 +15,7 @@ const DevicePage = () => {
 
   function showDeviceName() {
     const brand = brands
-      .filter((i) => i.id == device.brandId)
+      .filter((i) => i.id === device.brandId)
       .map((obj) => obj.name);
     return `${brand} ${device.name}`;
   }

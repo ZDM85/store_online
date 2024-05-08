@@ -35,7 +35,8 @@ const NavBar = () => {
       getUsers().then((data) => role.setUsers(data));
       fetchRolesUser().then((data) => setRoles(data));
     }
-  }, []);
+  }, [role, user.isAuth]);
+
   return (
     <div className="navbar">
       <div className="container">

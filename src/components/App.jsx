@@ -19,7 +19,7 @@ const App = () => {
         })
         .finally(() => user.setLoading(false));
     }
-  }, []);
+  }, [user]);
 
   if (user.loading) {
     return (

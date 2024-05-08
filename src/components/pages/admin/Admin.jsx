@@ -15,8 +15,6 @@ import DeleteRole from "../../modals/role/delete-role/DeleteRole";
 const Admin = () => {
   const { device, role, user } = useContext(Context);
 
-  console.log(user);
-
   return (
     <div className="admin">
       <div className="container">
