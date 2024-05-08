@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./admin.css";
 import { Context } from "../../..";
 import CreateType from "../../modals/type/CreateType";

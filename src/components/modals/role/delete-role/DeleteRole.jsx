@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "./delete-role.css";
 import { Context } from "../../../..";
 import { observer } from "mobx-react-lite";
